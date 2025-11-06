@@ -1,0 +1,82 @@
+.hero-section {
+  background-color: #0d0d0d;
+  min-height: 100vh;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image {
+  border-radius: 50%;
+  border: 10px solid #37dffc;
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Latar bulat biru muda di belakang foto */
+.hero-image-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: scale(1.1);
+}
+
+.hero-text h3,
+.hero-text h1 {
+  color: #fff;
+}
+
+.highlight {
+  color: #37dffc;
+}
+
+.hero-social {
+  display: flex;
+  justify-content: flex-start; /* rata kiri */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.hero-social a {
+  color: #37dffc;
+  background-color: #1a1a1a;
+  border: 2px solid #37dffc;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-social a:hover {
+  background-color: #37dffc;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.hire-btn {
+  border: 1px solid #37dffc;
+  color: #37dffc;
+  transition: 0.3s;
+}
+
+.hire-btn:hover {
+  background-color: #37dffc;
+  color: #fff;
+}

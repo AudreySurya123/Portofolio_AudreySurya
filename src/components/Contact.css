@@ -1,0 +1,107 @@
+/* ====== Contact Section ====== */
+#contact {
+  background: #ffffff; /* 🔹 Ubah jadi putih */
+  color: #111827; /* 🔹 Ubah warna teks agar kontras */
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* Judul */
+#contact h2 {
+  display: block;
+  text-align: center;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #111827; /* 🔹 Warna teks judul gelap */
+  letter-spacing: 1.5px;
+}
+
+#contact h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00e0ff, #00ffa3);
+}
+
+/* ====== Card ====== */
+.contact-card {
+  background: rgba(0, 0, 0, 0.03); /* 🔹 Sedikit abu biar lembut di atas putih */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 224, 255, 0.25);
+}
+
+/* ====== Input Styling ====== */
+.contact-input {
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  color: #111827;
+  padding: 12px 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-input:focus {
+  background: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 2px #00ffa3;
+  outline: none;
+}
+
+/* ====== Button ====== */
+.contact-btn {
+  background: linear-gradient(90deg, #00e0ff, #00ffa3);
+  border: none;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 28px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ====== Footer Section ====== */
+.footer {
+  background: linear-gradient(135deg, #0a0f1a 0%, #111827 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0;
+}
+
+/* ====== Social Icons ====== */
+.footer .social-icons a {
+  color: #00e0ff;
+  font-size: 1.5rem;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #00ffa3;
+  transform: translateY(-4px);
+}

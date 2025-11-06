@@ -1,0 +1,120 @@
+/* ====== Experience Section ====== */
+#experience {
+  background-color: #f8f9fc;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+/* Judul Section */
+#experience h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #0d1117;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  position: relative;
+  display: inline-block; /* supaya garis bawah pas */
+  text-align: center; /* ✅ hanya teks judul di tengah */
+  left: 50%;
+  transform: translateX(-50%); /* biar benar-benar center */
+}
+
+#experience h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00e0ff, #00ffa3);
+}
+
+/* ====== Card Styling ====== */
+.experience-card {
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  height: 100%;
+  background: #fff;
+}
+
+/* Garis gradient di atas card */
+.experience-card .card-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(90deg, #00e0ff, #00ffa3);
+}
+
+/* Isi card */
+.experience-card .card-body {
+  padding: 2rem;
+}
+
+.experience-card .card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #0d1117;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card .card-subtitle {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.experience-card .card-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Hover Effect */
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 224, 255, 0.25);
+}
+
+/* Animasi Fade In */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pastikan semua card punya tinggi sama dalam satu baris */
+#experience .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#experience .col-md-6 {
+  display: flex;
+}
+
+.experience-card {
+  flex: 1; /* isi ruang secara penuh */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#experience .col-md-6 {
+  display: flex;
+  margin-bottom: 2px; /* ✅ tambahkan jarak antar card */
+}

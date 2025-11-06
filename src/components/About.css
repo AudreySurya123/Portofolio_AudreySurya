@@ -1,0 +1,72 @@
+/* ====== Section About ====== */
+#about {
+  background-color: #f8f9fc; /* warna lembut */
+  padding-top: 120px; /* jarak dari navbar */
+  padding-bottom: 100px;
+  scroll-margin-top: 100px;
+}
+
+/* Judul Section */
+#about h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #0d1117;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+  text-align: center; /* ✅ center */
+  position: relative;
+  display: block; /* ✅ ubah dari inline-block ke block */
+}
+
+#about h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00e0ff, #00ffa3);
+}
+
+/* Foto profil */
+#about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%; /* 🔹 ubah ini */
+  box-shadow: 0 5px 25px rgba(0, 224, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 224, 255, 0.5);
+}
+
+/* Paragraf teks */
+#about p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Animasi ringan */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

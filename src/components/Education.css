@@ -1,0 +1,103 @@
+/* ====== Section Education ====== */
+#education {
+  background-color: #f8f9fc;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+/* ====== Judul Section ====== */
+#education h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #0d1117;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  position: relative;
+  display: block; /* ✅ ubah ke block biar bisa rata tengah */
+  text-align: center; /* ✅ pastikan teks di tengah */
+  font-size: 2.2rem; /* ukuran tetap elegan */
+  margin-bottom: 2rem;
+}
+
+
+#education h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #00e0ff, #00ffa3);
+}
+
+/* ====== Card Styling ====== */
+.education-card {
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+/* Garis gradient atas */
+.education-card .card-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(90deg, #00e0ff, #00ffa3);
+}
+
+/* Isi Card */
+.education-card .card-body {
+  padding: 2rem;
+}
+
+.edu-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #0d1117;
+}
+
+.edu-subtitle {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 0.6rem;
+}
+
+.edu-gpa {
+  font-size: 0.95rem;
+  color: #00c2ff;
+  margin-bottom: 0.5rem;
+}
+
+.edu-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Hover Effect */
+.education-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 224, 255, 0.25);
+}
+
+/* Animasi Fade In */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
