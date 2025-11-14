@@ -27,7 +27,7 @@ function Experience() {
       role: "Software Developer Intern",
       company: "PT KAI Indonesia",
       year: "Dec 2024 - Feb 2025",
-      desc: "Developed a web-based inventory catalog system using Laravel 11 and MySQL as the database. Implemented CRUD features, stock management, and export functionalities for item reports (PDF/XLSX). Collaborated with the IT team to improve backend performance and enhance the admin dashboard with responsive UI and data visualization.",
+      desc: "Developed a web-based inventory catalog system using Laravel 10 and MySQL as the database. Implemented CRUD features, stock management, and export functionalities for item reports (PDF/XLSX). Collaborated with the IT team to improve backend performance and enhance the admin dashboard with responsive UI and data visualization.",
     },
   ];
 

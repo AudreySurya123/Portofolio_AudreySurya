@@ -9,7 +9,6 @@ function Education() {
       school: "Universitas Sebelas Maret",
       year: "2022 - 2025",
       gpa: "3.76 / 4.00",
-      desc: "Focused on web development, software engineering, and database systems. Experienced with React, Flask, and Laravel.",
     },
   ];
 
